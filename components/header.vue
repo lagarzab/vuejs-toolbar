@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'toolbar',
+    name: 'toolbar-header',
     data () {
         return {
 
