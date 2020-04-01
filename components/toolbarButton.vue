@@ -1,17 +1,16 @@
 <template>
     <a :href='href' class='toolbar-button'>
-        <div class='button'>
-            <slot></slot>
-        </div>
+        <slot></slot>
     </a>
 </template>
 
 <script>
 export default {
     name: 'toolbarButton',
-    data () {
-        return {
-            href: '#',
+    props: {
+        href: {
+            type: String,
+            default: '#'
         }
     }
 }
@@ -20,23 +19,15 @@ export default {
 <style lang='scss' scoped>
 
     a.toolbar-button  {
+        display:flex;
+        align-items: center;
         height: 100%;
+        padding: 0px 15px;
+        font-weight: bold;
         text-decoration: none;
         color: black;
     }
     a.toolbar-button:hover {
         background-color:rgba(black, .25);
-    }
-
-    div.button {
-        height:100%;
-        position: relative;
-        display:flex;
-        flex-grow: 1;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        font-weight: bold;
-        margin: 0px 15px;
     }
 </style>
