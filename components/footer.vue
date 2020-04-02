@@ -3,7 +3,7 @@
         <div class='contact-footer' v-if="!hideContactSection">
             <template>
                 <slot name='contact'>
-                    contact-me@hear.com
+                    contact-us@test.com
                 </slot>
             </template>
         </div>
