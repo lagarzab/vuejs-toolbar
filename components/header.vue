@@ -36,7 +36,6 @@ export default {
         display: flex;
         flex-direction: row;
         width:100%;
-        background-color:rgba(red, .3);
     }
     .toolbar-column {
         @extend .toolbar;
